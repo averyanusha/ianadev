@@ -1,0 +1,17 @@
+.about {
+}
+
+.aboutTitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.aboutSection {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
+}
+
+.aboutText{}
