@@ -6,7 +6,7 @@ import motion from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className={styles.hero}>
+    <div className={`section ${styles.hero}`}>
       <Image
         src="/images/ianadev.jpg" 
         alt="Iana Averianova"

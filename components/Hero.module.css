@@ -1,5 +1,5 @@
-.hero{
-  height: 100vh;
+.hero {
+  height: 100%;
 }
 
 .heroImage {
@@ -20,6 +20,12 @@
   border: 1px solid var(--color-primary);
   border-radius: 10rem;
   padding: 0 0.8rem;
+  transition: color 1s, background-color 1s;
+}
+
+.heroTitle span:hover {
+  background-color: var(--color-secondary);
+  color: white;
 }
 
 .heroText {

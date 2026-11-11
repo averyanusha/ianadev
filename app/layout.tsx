@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['200', '400', '500', '800'],
-  display: 'swap'
-})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,8 +11,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={montserrat.className}
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet" />
+      </head>
       <body className="container">
         <Navbar />
         {children}

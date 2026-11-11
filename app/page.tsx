@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import About from "@/components/AboutComponent";
+import Skills from "@/components/Skills";
+import Portfolio from "@/components/Portfolio";
+import { EmblaOptionsType } from "embla-carousel";
+
+const OPTIONS: EmblaOptionsType = {};
+const SLIDE_COUNT = 4
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function Home() {
   return (
@@ -8,6 +15,8 @@ export default function Home() {
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Hero />
         <About/>
+        <Skills/>
+        <Portfolio slides={SLIDES} options={OPTIONS}/>
       </main>
     </div>
   );

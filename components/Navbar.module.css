@@ -6,3 +6,9 @@
 .logo {
   flex: 2 1 0%;
 }
+
+.navlink {}
+
+.navlink:hover {
+  text-decoration: underline;
+}

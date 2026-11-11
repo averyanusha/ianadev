@@ -1,0 +1,22 @@
+.skillsList {
+  display: flex;
+  margin: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillsLink {
+  display: flex;
+}
+
+.skillsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-secondary);
+  border-radius: 70;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
