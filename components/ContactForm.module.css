@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50%;
+  gap: 2rem;
+}
+
+.formInput {
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-secondary);
+}
+
+.formTextarea {
+  border: 1px solid val(--color-secondary);
+  border-radius: 20px;
+  padding: 1rem;
+}

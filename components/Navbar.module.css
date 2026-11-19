@@ -1,14 +1,28 @@
+.nav {
+  margin-bottom: 0;
+}
+
 .navbar {
   display: flex;
   gap: 30;
+  align-items:last baseline;
 }
 
-.logo {
+.navLogo {
   flex: 2 1 0%;
 }
 
-.navlink {}
+.logo {
+  height: 1.5rem;
+  width: auto;
+}
+
+.navlink {
+  text-transform: lowercase;
+}
 
 .navlink:hover {
   text-decoration: underline;
 }
+
+

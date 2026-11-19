@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Iana Averianova — Développeuse full-stack",
+    "description": "Développeuse full-stack (React, TypeScript, Node.js, PostgreSQL). Sites vitrines, applications web, intégration d'IA et maintenance."
+  },
+  "nav": {
+    "about": "À propos",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact",
+    "cvFile": "/cv/CV_Iana_Averianova-fr.pdf",
+    "switchLanguage": "EN"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis Iana",
+    "roleBefore": "",
+    "roleHighlight": "Développeuse",
+    "roleAfter": "full-stack",
+    "tagline": "Je conçois et développe des sites et des applications web — de la première idée à la mise en ligne.",
+    "ctaWork": "Voir mes projets",
+    "ctaContact": "Me contacter",
+    "availability": "Ouverte aux postes en CDI comme aux missions freelance."
+  },
+  "about": {
+    "title": "À propos",
+    "p1": "Développeuse full-stack (TypeScript, React, Node.js, PostgreSQL), je conçois et mets en ligne des applications web depuis deux ans.",
+    "p2": "J'ai étudié les médias et la communication à Prague, puis j'ai commencé ma carrière dans une entreprise de marketing digital — c'est là que j'ai ouvert pour la première fois le code d'un site, et je ne l'ai plus refermé. J'ai appris en autodidacte, puis j'ai suivi la piscine de l'École 42 à Lyon pour poser des bases solides.",
+    "p3": "Depuis 2024, je travaille en freelance : un site en production pour une entreprise internationale, des applications web full-stack et des projets intégrant l'IA. Avant d'écrire une ligne de code, je prends le temps de comprendre le métier derrière le projet — c'est ce qui rend un site vraiment utile.",
+    "languages": "Je travaille en français, anglais, tchèque et russe."
+  },
+  "skills": {
+    "title": "Compétences"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "intro": "Des projets que j'ai conçus et développés de A à Z. Cliquez sur une carte pour en savoir plus.",
+    "labels": {
+      "live": "Voir le site",
+      "code": "Code",
+      "stack": "Stack",
+      "role": "Mon rôle",
+      "close": "Fermer"
+    },
+    "projects": {
+      "gseurodiffusion": {
+        "title": "GS Euro Diffusion",
+        "short": "Site d'un fournisseur international de fils de cuivre, avec les cours du cuivre en direct.",
+        "description": "Le cours du cuivre est au cœur de l'activité de cette entreprise : le site affiche donc les données de marché en direct, avec les cours du cuivre et la conversion de devises via des API externes, un graphique interactif sur 12 mois et un calendrier des cours historiques. Il comprend aussi un formulaire de contact validé, et un tableau de bord d'administration (authentification JWT, PostgreSQL) qui permet au client de gérer son contenu sans développeur.",
+        "role": "Conception, développement, mise en ligne et maintenance, en lien direct avec le client."
+      },
+      "memory-card-game": {
+        "title": "Jeu de memory",
+        "short": "Jeu full-stack avec comptes, progression et thèmes de cartes générés par IA.",
+        "description": "Un jeu de memory avec comptes utilisateurs, vérification par e-mail et avatars. Chaque partie est enregistrée en PostgreSQL ; l'XP et les rangs sont calculés à partir de l'historique plutôt que stockés, pour que les données restent cohérentes si la formule évolue. Les joueurs peuvent générer leurs propres thèmes : un LLM crée le contenu et les images, la sortie est validée par un schéma, les thèmes populaires sont mis en cache, et la génération passe par une file d'attente BullMQ / Redis pour que personne ne reste bloqué à attendre.",
+        "role": "Conçu, développé et déployé seule."
+      },
+      "cv": {
+        "title": "Générateur de CV",
+        "short": "Créez votre CV avec aperçu en direct et export PDF.",
+        "description": "Un générateur de CV avec aperçu en direct : remplissez vos informations, le CV se met à jour pendant la saisie, puis exportez-le en PDF. Développé en React et TypeScript, avec un état partagé qui synchronise le formulaire et l'aperçu.",
+        "role": "Conçu et développé seule."
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Ce que je peux réaliser pour vous.",
+    "items": {
+      "business": {
+        "title": "Sites vitrines",
+        "description": "Des sites rapides, pensés pour le mobile, qui vous amènent des clients : services clairs, galerie photo, formulaire de contact, et votre fiche Google Business optimisée.",
+        "price": "À partir de 900 €"
+      },
+      "apps": {
+        "title": "Applications web",
+        "description": "Des applications full-stack avec comptes utilisateurs, base de données, tableaux de bord et interface d'administration — de la conception à la mise en ligne.",
+        "price": "Sur devis"
+      },
+      "ai": {
+        "title": "Intégration d'IA",
+        "description": "Ajout de fonctionnalités IA à vos outils : génération de contenu, extraction de données, sorties structurées validées et maîtrise des coûts.",
+        "price": "Sur devis"
+      },
+      "maintenance": {
+        "title": "Maintenance et reprise de projets",
+        "description": "Reprise d'un code existant : correction de bugs, amélioration des performances et nouvelles fonctionnalités.",
+        "price": "À l'heure ou au mois"
+      }
+    }
+  },
+  "contact": {
+    "title": "Me contacter",
+    "intro": "Un projet, une question ou un poste à pourvoir ? Écrivez-moi — je réponds généralement sous 24 heures.",
+    "emailLabel": "Ou écrivez-moi directement :",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "message": "Votre demande",
+      "submit": "Envoyer",
+      "sending": "Envoi…",
+      "success": "Merci ! Votre message a bien été envoyé — je vous réponds très vite.",
+      "error": "Une erreur est survenue. Réessayez ou écrivez-moi directement."
+    }
+  },
+  "footer": {
+    "rights": "© 2026 Iana Averianova. Tous droits réservés."
+  }
+}

@@ -2,17 +2,19 @@
 
 import styles from './Skills.module.css';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function Skills() {
+  const t = useTranslations('skills')
   return (
     <div className="section">
-      <h2 className="section-title">My skills</h2>
+      <h2 className="section-title">{t('title')}</h2>
       <ul className={styles.skillsList}>
         <li className={styles.skillsLink}>
           <button className={styles.skillsBtn}>
             React
             <Image 
-              src="react-icon.svg"
+              src="icons/react-icon.svg"
               alt="reactJs"
               width={20}
               height={20}
@@ -23,7 +25,7 @@ export default function Skills() {
           <button className={styles.skillsBtn}>
             Next.js
             <Image 
-              src="next-js-icon.svg"
+              src="icons/next-js-icon.svg"
               alt="nextJs"
               width={20}
               height={20}
@@ -34,7 +36,7 @@ export default function Skills() {
           <button className={styles.skillsBtn}>
             Figma
             <Image 
-              src="figma.svg"
+              src="icons/figma.svg"
               alt="figma"
               width={20}
               height={20}
@@ -45,7 +47,7 @@ export default function Skills() {
           <button className={styles.skillsBtn}>
             Responsive web sites
             <Image 
-              src="responsiveness.svg"
+              src="icons/responsiveness.svg"
               alt="responsive"
               width={20}
               height={20}
@@ -56,7 +58,7 @@ export default function Skills() {
           <button className={styles.skillsBtn}>
             Typescript
             <Image 
-              src="typescript.svg"
+              src="icons/typescript.svg"
               alt="typescript"
               width={20}
               height={20}
@@ -67,7 +69,7 @@ export default function Skills() {
           <button className={styles.skillsBtn}>
             NodeJs
             <Image 
-              src="node-js-icon.svg"
+              src="icons/node-js-icon.svg"
               alt="NodeJs"
               width={20}
               height={20}
@@ -78,7 +80,7 @@ export default function Skills() {
           <button className={styles.skillsBtn}>
             PostgreSQL
             <Image 
-              src="postgresql-icon.svg"
+              src="icons/postgresql-icon.svg"
               alt="postgresql"
               width={20}
               height={20}
@@ -89,7 +91,7 @@ export default function Skills() {
           <button className={styles.skillsBtn}>
             Redis
             <Image 
-              src="cib_redis.svg"
+              src="icons/cib_redis.svg"
               alt="redis"
               width={20}
               height={20}

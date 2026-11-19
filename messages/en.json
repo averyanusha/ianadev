@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Iana Averianova — Full-stack Developer",
+    "description": "Full-stack developer (React, TypeScript, Node.js, PostgreSQL). Business websites, web applications, AI integration and maintenance."
+  },
+  "nav": {
+    "about": "About me",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact me",
+    "cvFile": "/cv/CV_Iana_Averianova_EN.pdf",
+    "switchLanguage": "FR"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Iana",
+    "roleBefore": "Full-stack",
+    "roleHighlight": "Developer",
+    "roleAfter": "",
+    "tagline": "I design and build websites and web applications — from the first idea to deployment.",
+    "ctaWork": "See my work",
+    "ctaContact": "Get in touch",
+    "availability": "Open to full-time roles and freelance projects."
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I'm a full-stack developer working with TypeScript, React, Node.js and PostgreSQL, with two years of experience building and shipping web applications.",
+    "p2": "I studied media and communication in Prague, then started my career at a digital marketing company — that's where I first opened the code behind a website and didn't want to close it. I taught myself, then joined the École 42 piscine in Lyon to build solid foundations.",
+    "p3": "Since 2024 I've worked as a freelance developer: a production website for an international company, full-stack web apps, and projects integrating AI. Before writing a line of code, I take time to understand the business behind the project — that's what makes a site actually useful.",
+    "languages": "I work in English, French, Czech and Russian."
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "intro": "Projects I've designed and built end to end. Click a card for the details.",
+    "labels": {
+      "live": "Live site",
+      "code": "Code",
+      "stack": "Stack",
+      "role": "My role",
+      "close": "Close"
+    },
+    "projects": {
+      "gseurodiffusion": {
+        "title": "GS Euro Diffusion",
+        "short": "Website for an international copper wire supplier, with live copper prices.",
+        "description": "The copper price drives this company's whole business, so live market data is at the heart of the site: copper prices and currency conversion through external APIs, an interactive 12-month chart and a historical rate calendar. The site also includes a validated contact form, and an admin dashboard with JWT authentication and PostgreSQL so the client can manage their content without a developer.",
+        "role": "Designed, built, deployed and maintained end to end, working directly with the client."
+      },
+      "memory-card-game": {
+        "title": "Memory Card Game",
+        "short": "Full-stack game with accounts, progression and AI-generated card themes.",
+        "description": "A memory game with user accounts, email verification and avatars. Every game is saved in PostgreSQL, and XP and ranks are calculated from game history rather than stored, so the data stays consistent if the formula changes. Players can generate their own card themes: an LLM creates the content and images, the output is validated against a schema, popular themes are cached, and generation runs in a BullMQ / Redis job queue so nobody waits blocked.",
+        "role": "Designed, built and deployed solo."
+      },
+      "cv": {
+        "title": "CV Builder",
+        "short": "Build a CV with live preview and PDF export.",
+        "description": "A CV builder with a live preview: fill in your details, watch the CV update as you type, then export it to PDF. Built with React and TypeScript, with the form and the preview kept in sync through shared state.",
+        "role": "Designed and built solo."
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "intro": "What I can build for you.",
+    "items": {
+      "business": {
+        "title": "Business websites",
+        "description": "Fast, mobile-first websites that bring clients in: clear services, photo gallery, contact form, and your Google Business profile set up and optimised.",
+        "price": "From €900"
+      },
+      "apps": {
+        "title": "Web applications",
+        "description": "Full-stack applications with user accounts, databases, dashboards and admin panels — from design to deployment.",
+        "price": "On quote"
+      },
+      "ai": {
+        "title": "AI integration",
+        "description": "Adding LLM features to existing products: content generation, data extraction, validated structured output and cost control.",
+        "price": "On quote"
+      },
+      "maintenance": {
+        "title": "Maintenance & takeovers",
+        "description": "Picking up an existing codebase: fixing bugs, improving performance and shipping new features.",
+        "price": "Hourly or monthly"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "intro": "A project, a question, or a role to discuss? Write to me — I usually reply within a day.",
+    "emailLabel": "Or email me directly:",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "message": "Your request",
+      "submit": "Send",
+      "sending": "Sending…",
+      "success": "Thank you! Your message has been sent — I'll get back to you soon.",
+      "error": "Something went wrong. Please try again or email me directly."
+    }
+  },
+  "footer": {
+    "rights": "© 2026 Iana Averianova. All rights reserved."
+  }
+}

@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-secondary);
+  padding: 2rem 10rem;
+  color: white;
+}
+
+.footerLogo {
+  width: 100%;
+  max-width: 300px;
+}
+.footerColumn {}
+
+.footerSubtitle {
+  font-size: 1.5rem;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footerIcon {
+  width: 15%;
+  height: auto;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}

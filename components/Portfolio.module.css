@@ -78,3 +78,18 @@
 .carouselSlide:not(.isSnapped) {
   opacity: 0.3;
 }
+
+.portfolio {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.portfolioImage img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+.portfolioText {}

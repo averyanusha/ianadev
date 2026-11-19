@@ -7,6 +7,7 @@ import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
 import ClassNames from 'embla-carousel-class-names';
 import { portfolioProject } from './data/portfolioProjects';
+import { useTranslations } from 'next-intl';
 
 type PropType = {
   slides: number[],
@@ -25,6 +26,7 @@ export default function Portfolio(props: PropType) {
   const [ emblaRef, emblaApi ] = useEmblaCarousel({loop: true}, [ClassNames({ snapped: styles.isSnapped })]);
   const [ selectedIndex, setSelectedIndex ] = useState(0);
   const [ scrollSnaps, setScrollSnaps ] = useState<number[]>([]);
+  const t = useTranslations('portfolio');
 
   useEffect(() => {
     if(!emblaApi)
@@ -36,9 +38,8 @@ export default function Portfolio(props: PropType) {
 
   return (
     <section id="portfolio" className="section">
-      <h2 className="section-title">Portfolio</h2>
-      <p className={styles.description}> The world of web Design and Development is constantly evolving and so I am,  every project i am taking is unique and teaching me something new
-      </p>
+      <h2 className="section-title">{t('title')}</h2>
+      <p className={styles.description}>{t('intro')}</p>
       <div className={styles.carousel} ref={emblaRef}>
         <div className={styles.carouselContainer}>
           {portfolioProject.map((project) => {
@@ -46,10 +47,10 @@ export default function Portfolio(props: PropType) {
               <Link href={`/portfolio/${project.id}`} key={project.id} className={styles.carouselSlide}>
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={t(`projects.${project.id}.title`)}
                   className={styles.carouselSlideImg}
                 />
-                <h3>{project.title}</h3>
+                <h3>{t(`projects.${project.id}.title`)}</h3>
               </Link>
             )
           })}
