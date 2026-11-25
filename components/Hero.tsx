@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image";
 import styles from './Hero.module.css';
 import motion from 'framer-motion';
@@ -25,12 +23,10 @@ export default function Hero() {
         <br/>{t('roleBefore')}
         <span>{t('roleHighlight')}</span>
       </h1>
-      <p className="">
+      <p className="section-subtitle">
         {t('tagline')}
       </p>
-      <p className="">
-        {t('availability')}
-      </p>
+      <p>{t('availability')}</p>
       <div className="">
         <a href="#portfolio" className="ctaButton">
           {t('ctaWork')}

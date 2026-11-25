@@ -5,6 +5,7 @@ import styles from './Portfolio.module.css';
 import Link from 'next/link';
 import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
+import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 import ClassNames from 'embla-carousel-class-names';
 import { portfolioProject } from './data/portfolioProjects';
 import { useTranslations } from 'next-intl';
@@ -23,7 +24,7 @@ type DotButtonType = {
 
 export default function Portfolio(props: PropType) {
   const { slides, options } = props;
-  const [ emblaRef, emblaApi ] = useEmblaCarousel({loop: true}, [ClassNames({ snapped: styles.isSnapped })]);
+  const [ emblaRef, emblaApi ] = useEmblaCarousel({loop: true}, [ClassNames({ snapped: styles.isSnapped }), WheelGesturesPlugin()]);
   const [ selectedIndex, setSelectedIndex ] = useState(0);
   const [ scrollSnaps, setScrollSnaps ] = useState<number[]>([]);
   const t = useTranslations('portfolio');
@@ -39,7 +40,7 @@ export default function Portfolio(props: PropType) {
   return (
     <section id="portfolio" className="section">
       <h2 className="section-title">{t('title')}</h2>
-      <p className={styles.description}>{t('intro')}</p>
+      <p className="section-subtitle">{t('intro')}</p>
       <div className={styles.carousel} ref={emblaRef}>
         <div className={styles.carouselContainer}>
           {portfolioProject.map((project) => {

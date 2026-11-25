@@ -9,17 +9,24 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^7.0.9",
+    "@types/react-burger-menu": "^2.8.7",
+    "@upstash/ratelimit": "^2.2.1",
+    "@upstash/redis": "^1.41.0",
     "embla-carousel": "^8.6.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-class-names": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
+    "embla-carousel-wheel-gestures": "^8.1.0",
     "framer-motion": "^14.0.0",
     "lucide-react": "^1.72.0",
     "next": "16.4.0",
     "next-intl": "^4.15.1",
     "react": "19.3.0",
+    "react-burger-menu": "^3.1.0",
     "react-dom": "19.3.0",
-    "react-hook-form": "^7.92.0"
+    "react-hook-form": "^7.92.0",
+    "resend": "^6.39.0"
   },
   "devDependencies": {
     "@types/node": "^20",

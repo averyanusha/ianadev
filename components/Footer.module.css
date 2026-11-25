@@ -1,9 +1,12 @@
 .footer {
-  display: flex;
-  justify-content: space-around;
   background-color: var(--color-secondary);
   padding: 2rem 10rem;
   color: white;
+}
+
+.footerBody {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footerLogo {
@@ -30,4 +33,8 @@
 
 .footerLink:hover {
   text-decoration: underline;
+}
+
+.footerBottom {
+  margin: 2rem;
 }

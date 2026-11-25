@@ -18,6 +18,7 @@ export default function PortfolioPage({params} : {params: Promise<{ portfolioId:
           <span>{project.year}</span>
         </p>
         <p>{t(`projects.${portfolioId}.description`)}</p>
+        <a href={project.link} className={style.portfolioLink}>{t(`projects.${portfolioId}.link`)}</a>
       </div>
       <div className={style.portfolioImage}>
         <img src={project.image} alt={t(`projects.${portfolioId}.title`)} />

@@ -46,19 +46,22 @@
         "title": "GS Euro Diffusion",
         "short": "Site d'un fournisseur international de fils de cuivre, avec les cours du cuivre en direct.",
         "description": "Le cours du cuivre est au cœur de l'activité de cette entreprise : le site affiche donc les données de marché en direct, avec les cours du cuivre et la conversion de devises via des API externes, un graphique interactif sur 12 mois et un calendrier des cours historiques. Il comprend aussi un formulaire de contact validé, et un tableau de bord d'administration (authentification JWT, PostgreSQL) qui permet au client de gérer son contenu sans développeur.",
-        "role": "Conception, développement, mise en ligne et maintenance, en lien direct avec le client."
+        "role": "Conception, développement, mise en ligne et maintenance, en lien direct avec le client.",
+        "link": "Visitez"
       },
       "memory-card-game": {
         "title": "Jeu de memory",
         "short": "Jeu full-stack avec comptes, progression et thèmes de cartes générés par IA.",
         "description": "Un jeu de memory avec comptes utilisateurs, vérification par e-mail et avatars. Chaque partie est enregistrée en PostgreSQL ; l'XP et les rangs sont calculés à partir de l'historique plutôt que stockés, pour que les données restent cohérentes si la formule évolue. Les joueurs peuvent générer leurs propres thèmes : un LLM crée le contenu et les images, la sortie est validée par un schéma, les thèmes populaires sont mis en cache, et la génération passe par une file d'attente BullMQ / Redis pour que personne ne reste bloqué à attendre.",
-        "role": "Conçu, développé et déployé seule."
+        "role": "Conçu, développé et déployé seule.",
+        "link": "Visitez"
       },
       "cv": {
         "title": "Générateur de CV",
         "short": "Créez votre CV avec aperçu en direct et export PDF.",
         "description": "Un générateur de CV avec aperçu en direct : remplissez vos informations, le CV se met à jour pendant la saisie, puis exportez-le en PDF. Développé en React et TypeScript, avec un état partagé qui synchronise le formulaire et l'aperçu.",
-        "role": "Conçu et développé seule."
+        "role": "Conçu et développé seule.",
+        "link": "Visitez"
       }
     }
   },
@@ -90,15 +93,17 @@
   },
   "contact": {
     "title": "Me contacter",
-    "intro": "Un projet, une question ou un poste à pourvoir ? Écrivez-moi — je réponds généralement sous 24 heures.",
+    "intro": "Un projet, une question ou un poste à pourvoir?", 
+    "subintro": "Écrivez-moi, je réponds sous 24 heures.",
     "emailLabel": "Ou écrivez-moi directement :",
     "form": {
       "name": "Nom complet",
+      "company": "Nom de l'entreprise",
       "email": "Adresse e-mail",
       "message": "Votre demande",
       "submit": "Envoyer",
       "sending": "Envoi…",
-      "success": "Merci ! Votre message a bien été envoyé — je vous réponds très vite.",
+      "success": "Merci ! Votre message a bien été envoyé. Je vous réponds très vite.",
       "error": "Une erreur est survenue. Réessayez ou écrivez-moi directement."
     }
   },

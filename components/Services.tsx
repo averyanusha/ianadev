@@ -1,4 +1,3 @@
-
 import { MonitorSmartphone, AppWindow, Bot, Wrench, LucideIcon } from 'lucide-react'
 import style from './Services.module.css';
 import { useTranslations } from 'next-intl';

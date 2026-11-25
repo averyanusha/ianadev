@@ -46,19 +46,22 @@
         "title": "GS Euro Diffusion",
         "short": "Website for an international copper wire supplier, with live copper prices.",
         "description": "The copper price drives this company's whole business, so live market data is at the heart of the site: copper prices and currency conversion through external APIs, an interactive 12-month chart and a historical rate calendar. The site also includes a validated contact form, and an admin dashboard with JWT authentication and PostgreSQL so the client can manage their content without a developer.",
-        "role": "Designed, built, deployed and maintained end to end, working directly with the client."
+        "role": "Designed, built, deployed and maintained end to end, working directly with the client.",
+        "link": "Visit"
       },
       "memory-card-game": {
         "title": "Memory Card Game",
         "short": "Full-stack game with accounts, progression and AI-generated card themes.",
         "description": "A memory game with user accounts, email verification and avatars. Every game is saved in PostgreSQL, and XP and ranks are calculated from game history rather than stored, so the data stays consistent if the formula changes. Players can generate their own card themes: an LLM creates the content and images, the output is validated against a schema, popular themes are cached, and generation runs in a BullMQ / Redis job queue so nobody waits blocked.",
-        "role": "Designed, built and deployed solo."
+        "role": "Designed, built and deployed solo.",
+        "link": "Visit"
       },
       "cv": {
         "title": "CV Builder",
         "short": "Build a CV with live preview and PDF export.",
         "description": "A CV builder with a live preview: fill in your details, watch the CV update as you type, then export it to PDF. Built with React and TypeScript, with the form and the preview kept in sync through shared state.",
-        "role": "Designed and built solo."
+        "role": "Designed and built solo.",
+        "link": "Visit"
       }
     }
   },
@@ -90,10 +93,12 @@
   },
   "contact": {
     "title": "Get in touch",
-    "intro": "A project, a question, or a role to discuss? Write to me — I usually reply within a day.",
+    "intro": "A project, a question, or a role to discuss?",
+    "subintro": "Write to me — I usually reply within a day.",
     "emailLabel": "Or email me directly:",
     "form": {
       "name": "Full name",
+      "company": "Company name",
       "email": "Email address",
       "message": "Your request",
       "submit": "Send",
